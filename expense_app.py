@@ -3,11 +3,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
 
-# --- Page Config ---
+#Page Config
 st.set_page_config(page_title="Monthly Expense Tracker", page_icon="💰")
 st.title("💰 Monthly Expense Tracker")
 
-# --- Upload CSV ---
+#Upload CSV
 uploaded_file = st.file_uploader("Upload your expenses.csv file", type="csv")
 
 if uploaded_file:
@@ -15,7 +15,7 @@ if uploaded_file:
     st.write("### Uploaded CSV")
     st.dataframe(df)
 
-    # --- Function to show pie chart and totals ---
+    #Function to show pie chart and totals
     def show_chart(dataframe):
         category_totals = dataframe.drop(columns=["Date"]).sum()
         fig, ax = plt.subplots(figsize=(6,6))
@@ -25,7 +25,7 @@ if uploaded_file:
         st.dataframe(category_totals.to_frame("Amount (₹)"))
         st.write(f"💵 Grand Total: ₹ {category_totals.sum():,.2f}")
 
-    # --- Show chart for uploaded CSV ---
+    #Show chart for uploaded CSV
     show_chart(df)
 
     st.write("### Add Today's Expense")
@@ -53,4 +53,5 @@ if uploaded_file:
         file_name="updated_expenses.csv",
         mime="text/csv"
     )
+
 
