@@ -41,7 +41,7 @@ if uploaded_file:
         new_row = {"Date": today, **new_expense}
         df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
         df.to_csv("updated_expenses.csv", index=False)
-        st.success("✅ Expense added! CSV updated.")
+        st.success("Expense added! CSV updated.")
         
         # Show updated chart
         show_chart(df)
@@ -53,3 +53,4 @@ if uploaded_file:
         file_name="updated_expenses.csv",
         mime="text/csv"
     )
+
