@@ -1,8 +1,8 @@
 💰 Monthly Expense Tracker
 
-A Streamlit-based web application to track, analyze, and manage monthly expenses efficiently.
+This project is a Streamlit-based web application that helps track and analyze monthly expenses using simple visualizations and data management features.
 
-Users can upload their expense dataset, visualize spending patterns, add new expenses, and download the updated data—all within a simple interface.
+It allows users to upload their expense data, understand spending patterns, add new expenses, and download the updated dataset.
 
 🚀 Features
 
@@ -34,30 +34,40 @@ Pandas
 
 Matplotlib
 
-▶️ Getting Started
-1. Clone the Repository
+▶️ How to Run the Project
+
+1️⃣ Clone the Repository
 git clone https://github.com/your-username/monthly-expense-tracker.git
+
 cd monthly-expense-tracker
-2. Install Dependencies
+
+2️⃣ Install Dependencies
 pip install -r requirements.txt
-3. Run the Application
+
+3️⃣ Run the App
 streamlit run app.py
-📊 Dataset Format
 
-Ensure your CSV file follows this structure:
+📊 Dataset Requirements
 
-Date,Food,Transport,Shopping,Entertainment,Others
-2026-03-01,200,100,500,150,50
-2026-03-02,300,50,200,100,80
+Ensure your dataset follows this format:
 
-The first column must be Date
+Date
 
-Remaining columns represent expense categories
+Food
 
-📌 Functional Overview
+Transport
+
+Shopping
+
+Entertainment
+
+Others
+
+📌 Key Functionalities
+
 🔹 Data Visualization
 
-Pie chart showing category-wise expense distribution
+Pie chart for category-wise expense distribution
 
 🔹 Expense Analysis
 
@@ -76,15 +86,6 @@ Automatically updates dataset
 Updated dataset is saved as:
 
 updated_expenses.csv
-💡 Future Enhancements
-
-Monthly and date filters
-
-Custom category support
-
-Additional visualizations (bar chart, line chart)
-
-Budget tracking and alerts
 
 🤝 Contributor
 
