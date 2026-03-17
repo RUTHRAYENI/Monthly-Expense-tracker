@@ -1,6 +1,5 @@
 ## 💰 Monthly Expense Tracker
 
-##  📌 Overview
  This project is a Streamlit-based web application that helps track and analyze monthly expenses using simple visualizations and data management features.
  It allows users to upload their expense data, understand spending patterns, add new expenses, and download the updated dataset.
 
