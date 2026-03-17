@@ -33,7 +33,7 @@ cd monthly-expense-tracker
 bashpip install -r requirements.txt
 3️⃣ Run the Application
 bashstreamlit run app.py
-```
+
 
 ---
 
@@ -64,7 +64,7 @@ Ensure your dataset follows this structure:
 ## 📥 Output
 
 Updated dataset is saved as:
-```
+
 updated_expenses.csv
 
 🤝 Contributor
